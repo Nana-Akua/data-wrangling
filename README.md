@@ -1,35 +1,29 @@
-# Data Analysis Fundamentals
+# Data Wrangling
 
-Hands-on practice in data exploration and analysis using SQL and Python. This repo documents my work as I build core skills toward machine learning engineering: loading, cleaning, querying, analyzing, and visualizing real datasets.
+Daily practice working through Manning's *Pandas Workout*, applying pandas, NumPy, and matplotlib to real data transformation problems — part of my ongoing push toward hands-on data and ML engineering skills.
 
-## What's covered
+## Structure
 
-**Python**
-- **pandas**: loading data, handling missing values, filtering, grouping, and summarizing DataFrames
-- **NumPy**: arrays, vectorized operations, and the numerical foundations pandas is built on
-- **Matplotlib**: visualizing distributions, trends, and relationships in data
+data-wrangling/
+├── foundations/
+│   ├── pandas-basics.ipynb
+│   ├── numpy-basics.ipynb
+│   ├── matplotlib-basics.ipynb
+│   └── data/
+├── 01-<exercise-name>/
+│   ├── 01-solution.ipynb
+│   └── 01-flowchart.svg   (included only where the exercise has real control flow)
+├── 02-<exercise-name>/
+└── ...
 
-**SQL**
-- Querying, filtering, joins, aggregations, and window functions across MySQL and PostgreSQL
-
-## Repo structure
-
-```
-data-analysis-fundamentals/
-├── 01-pandas/
-│   ├── data/
-│   └── notebooks
-├── 02-numpy/
-├── 03-matplotlib/
-└── 04-sql/
-```
-
-Each topic folder contains Jupyter notebooks (or `.sql` files) in learning order, with the datasets they use in a `data/` subfolder.
+- **`foundations/`** — exploratory work in pandas, NumPy, and matplotlib done before starting the structured exercise sequence below.
+- **Numbered folders** — one per *Pandas Workout* exercise, added as I complete them.
+- **Flowcharts** — included selectively, for exercises with meaningful branching or iterative logic. Most pandas exercises are linear data transformations and don't warrant one; when they do, it's in the folder.
 
 ## Tools
 
-Python · Jupyter Notebook · pandas · NumPy · Matplotlib · SQL (MySQL, PostgreSQL) · DBeaver · Git
+Python · pandas · NumPy · Matplotlib · Jupyter Notebook
 
 ## Status
 
-In progress. New topics and notebooks are added as I work through them.
+In progress. One push per exercise.
